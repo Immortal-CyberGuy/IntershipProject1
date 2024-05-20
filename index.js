@@ -35,7 +35,7 @@ function parseSpecs(specs) {
   const specsArray = JSON.parse(specs);
   const specsObject = {};
   specsArray.forEach((value, index) => {
-    const key = index === 0 ? "ItemName" : index === 1 ? "Fabric" : index === 2 ? "Top" : index === 3 ? "Bottom" : index === 4 ? "Dupatta" : "MRP";
+    const key = index === 0 ? "Specification 1" : index === 1 ? "Specification 2" : index === 2 ? "Specification 3" : index === 3 ? "Specification 4" : index === 4 ? "Specification 5" : "MRP";
     specsObject[key] = value;
   });
   return specsObject;
